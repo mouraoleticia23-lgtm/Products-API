@@ -2,7 +2,7 @@
 
 # Importa a biblioteca FastAPI para criar a aplicação e incluir rotas
 from fastapi import FastAPI
-from routers.products import router as products_router
+from src.routers.endpoints import router as products_router
 
 
 # Cria a aplicação FastAPI com informações de título, descrição e versão
