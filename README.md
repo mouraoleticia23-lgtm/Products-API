@@ -28,15 +28,15 @@ Process-API/
 
 ## Funcionalidades
 
-* ✅ Listar todos os produtos
-* ✅ Buscar produto por ID
-* ✅ Filtrar produtos por categoria
-* ✅ Criar novos produtos (com validação de ID único)
-* ✅ Atualizar produtos existentes (ID imutável)
-* ✅ Deletar produtos
-* ✅ Validação automática de dados com Pydantic
-* ✅ Documentação automática da API via Swagger
-* ✅ Testes automatizados
+* Listar todos os produtos
+* Buscar produto por ID
+* Filtrar produtos por categoria
+* Criar novos produtos (com validação de ID único)
+* Atualizar produtos existentes (ID imutável)
+* Deletar produtos
+* Validação automática de dados com Pydantic
+* Documentação automática da API via Swagger
+* Testes automatizados
 
 ---
 
@@ -51,50 +51,6 @@ Process-API/
 | PUT    | `/products/{id}`     | Atualiza produto existente        |
 | DELETE | `/products/{id}`     | Deleta produto                    |
 | GET    | `/`                  | Página inicial                    |
-
----
-
-## Como Executar
-
-### Pré-requisitos
-- Python 3.8+
-- pip
-
-### Passos
-
-1. **Clone/baixe o projeto** e navegue até a pasta:
-   ```bash
-   cd Process-API
-   ```
-
-2. **Instale as dependências**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Execute a aplicação**:
-   ```bash
-   uvicorn src.main:app --reload
-   ```
-
-4. **Acesse a aplicação**:
-   - API: http://127.0.0.1:8000
-   - Documentação Swagger: http://127.0.0.1:8000/docs
-   - Documentação ReDoc: http://127.0.0.1:8000/redoc
-
----
-
-## Como Testar
-
-Execute os testes automatizados com:
-```bash
-pytest tests/
-```
-
-Ou para modo verboso:
-```bash
-pytest tests/ -v
-```
 
 ---
 
@@ -144,6 +100,45 @@ Aqui estão algumas ideias para evoluir o projeto:
 
 ---
 
+## Como Executar
+
+### Passos
+
+1. **Clone o projeto** e navegue até a pasta:
+   ```bash
+   cd Process-API
+   ```
+
+2. **Instale as dependências**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Execute a aplicação**:
+   ```bash
+   uvicorn src.main:app --reload
+   ```
+
+4. **Acesse a aplicação**:
+   - API: http://127.0.0.1:8000
+   - Documentação Swagger: http://127.0.0.1:8000/docs
+
+---
+
+## Como Testar
+
+Execute os testes automatizados com:
+```bash
+pytest tests/
+```
+
+Ou para modo verboso:
+```bash
+pytest tests/ -v
+```
+
+---
+
 ## Exemplos de Uso
 
 ### Criar um produto
@@ -162,49 +157,3 @@ POST /products
 ```bash
 GET /products?category=electronics
 ```
-
----
-
-# Como executar o projeto
-
-Clone o repositório:
-
-```
-git clone https://github.com/seu-usuario/simple-data-api.git
-```
-
-Entre na pasta do projeto:
-
-```
-cd simple-data-api
-```
-
-Instale as dependências:
-
-```
-pip install -r requirements.txt
-```
-
-Execute a aplicação:
-
-```
-uvicorn main:app --reload
-```
-
-A API estará disponível em:
-
-```
-http://127.0.0.1:8000
-```
-
----
-
-# Documentação interativa
-
-Acesse:
-
-```
-http://127.0.0.1:8000/docs
-```
-
----
