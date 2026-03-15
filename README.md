@@ -81,19 +81,12 @@ Process-API/
 
 Aqui estão algumas ideias para evoluir o projeto:
 
-- **Banco de Dados**: Migrar de JSON para SQLite/PostgreSQL para melhor performance e concorrência
+- **Banco de Dados**: Migrar de JSON para SQLite/PostgreSQL para melhor performance
 - **Autenticação**: Implementar JWT/OAuth2 para proteger endpoints
-- **Paginação**: Adicionar paginação e limites nos endpoints de listagem
-- **Busca Avançada**: Filtros múltiplos (preço, categoria, nome) e ordenação
 - **Logs**: Sistema de logging estruturado para monitoramento
 - **Containerização**: Dockerfile e docker-compose para facilitar deploy
 - **CI/CD**: Pipeline de integração contínua com GitHub Actions
-- **Versionamento de API**: Suporte a múltiplas versões (v1, v2)
-- **Rate Limiting**: Controle de taxa de requisições para evitar abuso
-- **Cache**: Redis para cache de dados frequentes
 - **Testes de Integração**: Testes end-to-end com banco real
-- **Monitoramento**: Métricas e health checks com Prometheus
-- **Documentação Expandida**: Exemplos de uso em diferentes linguagens
 - **Webhooks**: Notificações para eventos (produto criado/atualizado)
 - **Upload de Imagens**: Suporte a imagens de produtos
 - **Internacionalização**: Suporte a múltiplos idiomas
